@@ -1,0 +1,109 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.menu-area a{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	background: #0085c3;
+	height: 50px;
+	font-family: monospace;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.menu-area a:hover{
+	background: #44acdb;
+	color:#fff;
+}
+
+.menu-area ul{
+	list-style:none;
+	display:flex;
+}
+
+.menu-area li{
+	position:relative;
+	width: 100%;
+	text-align: center;
+}
+
+.menu-area li:hover .portfolio_dropdown > li{
+	display:block;
+	top:0;
+}
+.portfolio_dropdown li{
+	display:none;
+	position:relative;
+	background: #44acdb;
+}
+.portfolio_dropdown{
+	position:absolute;
+	display:flex;
+	flex-direction:column;
+	width:100%;
+}
+
+.portfolio_dropdown li:hover .java_dropdown li{
+	display:block;
+}
+.java_dropdown li{
+	display: none;
+}
+.java_dropdown{
+	display:flex;
+	flex-direction: column;
+	position:absolute;
+	top:0;
+	left:100%;
+	width:200px;
+}
+	
+.portfolio_dropdown li:hover .html_dropdown li{
+	display:block;
+}	
+.html_dropdown li{
+	display:none;
+}
+.html_dropdown{
+	display:flex;
+	flex-direction:column;
+	position:absolute;
+	top:0;
+	left:100%;
+	width:180px;
+}
+
+.content-area{
+	
+	background-color:#fff;
+	
+	display:flex;
+	flex-direction:column;
+	border-width:3px;
+	border-color:black;
+	border-style:solid;
+}	
+
+.greeting{
+	font-family: monospace;
+	color:#000;
+	font-size-adjust:10%;
+	text-align:center;
+	justify-content:bottom;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
